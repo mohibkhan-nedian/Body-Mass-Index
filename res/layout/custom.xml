@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:gravity="top" >
+    
+     <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pickerValue"
+        android:layout_below="@+id/pickerValue"
+        android:layout_marginTop="29dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="OK" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnSelect"
+        android:layout_alignLeft="@+id/pickerUnit"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:text="Cancel" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCancel"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/separation_line" />
+
+    <NumberPicker
+        android:id="@+id/pickerUnit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSelect"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/imageView1" />
+
+    <NumberPicker
+        android:id="@+id/pickerValue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/imageView1" />
+ 
+
+    
+</RelativeLayout>
